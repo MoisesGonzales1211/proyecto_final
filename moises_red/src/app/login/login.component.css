@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5; /* Color de fondo de Facebook */
+  }
+  
+  .login {
+    background: #fff; /* Fondo blanco para el formulario */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  .login h2 {
+    color: #1877f2; /* Azul icónico de Facebook */
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Etiquetas */
+  .login label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Campos de entrada */
+  .login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+  }
+  
+  .login input:focus {
+    outline: none;
+    border-color: #1877f2; /* Resalta el campo seleccionado */
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(24, 119, 242, 0.2);
+  }
+  
+  /* Botón */
+  .login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2; /* Azul icónico de Facebook */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .login button:hover {
+    background-color: #165cbd; /* Azul más oscuro al pasar el cursor */
+  }
+  
+  /* Enlace para recuperar contraseña */
+  .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: #1877f2; /* Azul del enlace */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
