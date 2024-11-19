@@ -1,4 +1,5 @@
-<div class="login">
+<body>
+  <div class="login">
     <h2>Login</h2>
     <form (ngSubmit)="onSubmit()">
       <label for="email">Email</label>
@@ -6,18 +7,18 @@
         type="email" 
         id="email" 
         name="email" 
-        placeholder="Enter your email" 
+        placeholder="pon tu correo email" 
         [(ngModel)]="email"
         required 
       />
       <br />
   
-      <label for="password">Password</label>
+      <label for="password">contraseña</label>
       <input 
         type="password" 
         id="password" 
         name="password" 
-        placeholder="Enter your password" 
+        placeholder="pon tu contraseña" 
         [(ngModel)]="password" 
         required 
       />
@@ -25,8 +26,9 @@
   
       <button type="submit">INICIAR SESIÓN</button>
     </form>
-    <div class="register-link">
-      recuperar contraseña <a href="#">Register</a>
-    </div>
+    <div class="register-link">has olvidado tu contraseña <a href="#">recuperar</a></div>
+    <br>
+    <button type="submit">crear cuenta</button>
   </div>
   
+</body>
