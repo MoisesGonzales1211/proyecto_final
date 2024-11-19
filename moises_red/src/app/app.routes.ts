@@ -1,17 +1,17 @@
-import { Routes } from '@angular/router';
-import { app } from '../../server';
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+
 
 export const routes: Routes = [
-  {
-    { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirigir raíz al login
-  { path: 'login', component: LoginComponent }, // Ruta para el formulario de login
-  // Puedes agregar más rutas aquí
-  }
+   { path: '', redirectTo: 'login', pathMatch: 'full' }, 
+   { path: 'login', component: LoginComponent }, 
+  
 ];
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+   declarations: [LoginComponent],
+    imports: [RouterModule.forRoot(routes),FormsModule],
     exports: [RouterModule]
   })
   export class AppRoutingModule {}
