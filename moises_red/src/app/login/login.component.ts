@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { RegisterComponent } from '../register/register.component';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  
 })
 export class LoginComponent {
   email: string = '';
